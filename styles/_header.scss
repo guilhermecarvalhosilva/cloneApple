@@ -1,0 +1,106 @@
+.cabecalho {
+    @include flexBox(column, center, center);
+    height: auto;
+    width: 100%;
+
+    
+    .menu {
+        @include flexBox(row, center, center);
+        background-color: $corCinza01;
+        gap: 0px 50px;
+        width: 100%;
+        height: 60px;
+
+            .menu-item-img {
+            @include flexBox(row, center, center);
+
+                img {
+                    width: 25px;
+                }
+            }
+
+            .menu-item {
+                text-decoration: none;
+                color: $corBranco;
+                font-size: 0.9em;
+                font-weight: 500;
+            }
+    }
+
+
+    .bottom-cabecalho {
+        @include flexBox(row, space-around, center);
+        width: 100%;
+        height: 70px;
+    
+            .bottom-titulo {
+                font-weight: 500;
+            }
+
+            .link {
+                @include flexBox(row, center, center);
+                gap: 0px 30px;
+
+                .link-item {
+                    text-decoration: none;
+                    color: $corCinza02;
+                    font-size: 0.9em;
+                }
+
+                .link-item-comprar {
+                    text-decoration: none;
+                    color: $corBranco;
+                    font-size: 0.9em;
+                    background-color: $corAzul01;
+                    width: 120px;
+                    height: 45px;
+                    border-radius: 30px;
+                    text-align: center;
+                    line-height: 45px;
+                    transition: 0.3s;
+
+                    &:hover {
+                        background-color: $corAzul02;
+                    }
+                }
+            }
+    }
+
+}
+
+@media(max-width: 1000px) {
+    .cabecalho .menu .menu-item {
+        font-size: 0.8em;
+    }
+}
+
+@media(max-width: 930px) {
+    .cabecalho .menu .menu-item {
+        display: none;
+    }
+
+    .cabecalho .bottom-cabecalho {
+        justify-content: space-between;
+        width: 95%;
+    }
+
+    .cabecalho .bottom-cabecalho .link .link-item  {
+        display: none;
+    }
+}
+
+@media(max-width: 500px) {
+    .cabecalho .bottom-cabecalho .bottom-titulo  {
+        font-size: 0.8em;
+    }
+}
+
+@media(max-width: 350px) {
+    .cabecalho .bottom-cabecalho {
+        height: auto;
+        padding: 20px 0px;
+        flex-direction: column;
+        gap: 20px 0px;
+    }
+}
+

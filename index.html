@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Document</title>
+</head>
+<body>
+ <header class="cabecalho">
+    <nav class="menu">
+        <a href="#" class="menu-item-img"><img src="assets/logo_apple.svg" alt="Logo da apple"></a>
+        <a href="#" class="menu-item">Loja</a>
+        <a href="#" class="menu-item">Mac</a>
+        <a href="#" class="menu-item">iPad</a>
+        <a href="#" class="menu-item">iPhone</a>
+        <a href="#" class="menu-item">Watch</a>
+        <a href="#" class="menu-item">AirPods</a>
+        <a href="#" class="menu-item">Só na Apple</a>
+        <a href="#" class="menu-item">Acessórios</a>
+        <a href="#" class="menu-item">Suporte</a>
+    </nav>
+
+    <section class="bottom-cabecalho">
+        <article class="bottom-titulo">
+            <h2>iPhone 13 Pro</h2>
+        </article>
+
+        <article class="link">
+            <a href="#" class="link-item">Visão Geral</a>
+            <a href="#" class="link-item">Mudar para o iPhone</a>
+            <a href="#" class="link-item">Especificações</a>
+            <a href="#" class="link-item-comprar">Comprar</a>
+        </article>
+    </section>
+ </header>
+
+ <main class="conteudo">
+    <section class="promocao">
+        <p class="promocao-item">Pague seu novo iPhone em até 12 parcelas ou economize 10% nos pagamentos à vista. <span>Saiba mais</span></p>
+    </section>
+    <section class="principal">
+        <article class="escrito">
+            <h2 class="sub-titulo">iphone 13 Pro</h2>
+            <h1 class="titulo">É todo Pro.</h1>
+            <p class="paragrafo">o iPhone 13 Pro é uma enorme evolução. Ele traz uma rapidez absurda a tudo o que você faz e vem com novos recursos espetaculares para fotos e videos. Tudo em dois tamanhos.</p>
+            <p class="preco">A partir de R$ 9.499</p>
+            <button class="botao-comprar">Comprar</button>
+        </article>
+
+        <article class="imagem">
+            <img src="assets/iphone_green.jpg" alt="Modelo iPhone 13 Pro." id="img">
+        </article>
+
+        <article class="botao-cor">
+            <div class="botao-cor-item">
+                <button id="green" class="btn ativo" onclick="mudarImg('green', 'assets/iphone_green.jpg')" ></button>
+                <span>Verde-alpino</span>
+            </div>
+
+            <div class="botao-cor-item">
+                <button id="silver"  class="btn" onclick="mudarImg('silver', 'assets/iphone_silver.jpg')" ></button >
+                <span>Prateado</span>
+            </div>
+
+            <div class="botao-cor-item">
+                <button id="golden"  class="btn" onclick="mudarImg('golden', 'assets/iphone_golden.jpg')" ></button>
+                <span>Dourado</span>
+            </div>
+
+            <div class="botao-cor-item">
+                <button id="grafite"  class="btn" onclick="mudarImg('grafite', 'assets/iphone_grafite.jpg')" ></button>
+                <span>Grafite</span>
+            </div>
+
+            <div class="botao-cor-item">
+                <button id="blue"   class="btn" onclick="mudarImg('blue', 'assets/iphone_blue.jpg')" ></button>
+                <span>Azul-Sierra</span>
+            </div>
+        </article>
+    </section>
+ </main>
+
+ <footer>
+
+ </footer>
+
+ <script>
+    
+ </script>
+ <script src="script/showImg.js"></script>
+</body>
+</html>
