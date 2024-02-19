@@ -121,6 +121,7 @@ body {
   align-items: center;
   width: 100%;
   height: auto;
+  overflow-x: hidden;
 }
 .conteudo .promocao {
   display: flex;
